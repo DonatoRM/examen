@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Examen de GRI" />
+        <meta name="keywords" content="Examen, GRI" />
+        <meta name="author" content="Donato Ramos Martínez" />
+        <title>Examen</title>
+        <link rel="stylesheet" href="css/style.css" media="all" />
+    </head>
+    <body>
+        <header>
+            <h1>Examen de GRI</h1>
+        </header>
+        <main>
+            <section id="inputSection">
+                <form action="#" method="get" id="form" class="form">
+                    <fieldset>
+                        <legend>Formulario de entrada</legend>
+                        <div class="row">
+                            <label for="task" id="idLabelTask">Tarea: </label>
+                            <input
+                                type="text"
+                                name="task"
+                                id="task"
+                                class="task"
+                                placeholder="Tarea"
+                                aria-labelledby="idLabelTask"
+                                required
+                            />
+                            <button type="submit">Añadir</button>
+                            <div id="error" class="error"></div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <ul id="response" class="response"></ul>
+            </section>
+        </main>
+        <footer>
+            <button
+                type="button"
+                id="accessibility"
+                aria-label="Botón de accesibilidad"
+            >
+                Accesibilidad
+            </button>
+        </footer>
+        <script type="text/javascript" src="../src/index.js"></script>
+    </body>
+</html>

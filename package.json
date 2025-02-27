@@ -1,0 +1,32 @@
+{
+    "name": "27022025",
+    "version": "1.0.0",
+    "description": "Examen de GRI",
+    "keywords": [
+        "html",
+        "css",
+        "javascript"
+    ],
+    "homepage": "https://github.com/DonatoRM/examen#readme",
+    "bugs": {
+        "url": "https://github.com/DonatoRM/examen/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DonatoRM/examen.git"
+    },
+    "license": "ISC",
+    "author": "Donato Ramos Martínez",
+    "type": "commonjs",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "start public/index.html"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "eslint": "^9.21.0",
+        "eslint-config-prettier": "^10.0.2",
+        "globals": "^16.0.0",
+        "prettier": "^3.5.2"
+    }
+}

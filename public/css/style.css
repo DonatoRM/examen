@@ -1,0 +1,18 @@
+/*
+Examen de GRI
+Autor: Donato Ramos Martínez
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.error {
+    color: red;
+}
+.completed {
+    color: green;
+}
+.accessibility {
+    font-size: 4.5rem;
+}
