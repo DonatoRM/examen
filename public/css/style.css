@@ -10,7 +10,7 @@ Autor: Donato Ramos Martínez
 :root {
     --color-viewport: #fafdf0;
     --color-submit: #016906;
-    --color-footer: #18c0f3;
+    --color-footer: #004053;
     --color-button-accessibility: #f3c018;
     --color-danger: #bb0000;
 }
@@ -78,11 +78,13 @@ main section:first-child {
 }
 .buttonAccessibility {
     background-color: var(--color-button-accessibility);
+    color: var(--color-footer);
 }
 fieldset {
     border: 0;
 }
-legend {
+legend,
+h2 {
     opacity: 0;
 }
 .error {
@@ -91,7 +93,11 @@ legend {
 .toggleCompleted {
     color: var(--color-danger);
 }
-.completed {
+.completed:first-child {
+    text-decoration: line-through;
+    background-color: red;
+}
+.completed span {
     text-decoration: line-through;
 }
 footer {
@@ -102,6 +108,9 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 0;
+}
+.footer {
+    position: static;
 }
 .response {
     width: 80%;
@@ -120,6 +129,9 @@ footer {
 }
 .response li button:last-child {
     grid-column: 3;
+}
+.accessibility {
+    font-size: 4.5rem;
 }
 @media screen and (max-width: 750px) {
     h1 {

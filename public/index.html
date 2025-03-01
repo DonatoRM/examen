@@ -12,15 +12,20 @@
     </head>
     <body>
         <header>
-            <h1>
+            <h1 tabindex="-1">
                 <span>Examen de </span><span>Gabinete de Recolocación </span
                 ><span>Industrial GRI</span>
             </h1>
         </header>
         <main>
-            <section>
+            <section aria-labelledby="idLabelForm">
+                <header>
+                    <h2 id="idLabelForm" aria-hidden="true">
+                        Entrada de datos
+                    </h2>
+                </header>
                 <form action="#" method="get" id="form" class="form">
-                    <fieldset>
+                    <fieldset aria-hidden="true">
                         <legend>Formulario de entrada</legend>
                         <div class="row">
                             <div class="data">
@@ -50,8 +55,15 @@
                     </fieldset>
                 </form>
             </section>
-            <section>
-                <ul id="response" class="response" role="list"></ul>
+            <section aria-labelledby="idLabelResponse">
+                <header>
+                    <h2 id="idLabelResponse" aria-hidden="true">
+                        Lista de tareas
+                    </h2>
+                </header>
+                <ul id="response" class="response">
+                    <!-- Las tareas se agregarán aquí dinámicamente -->
+                </ul>
             </section>
         </main>
         <footer>
@@ -65,6 +77,6 @@
                 Accesibilidad
             </button>
         </footer>
-        <script type="text/javascript" src="../src/index.js"></script>
+        <script src="../src/index.js"></script>
     </body>
 </html>
