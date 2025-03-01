@@ -8,14 +8,14 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\GRI\\27022025\\public\\index.html"
+            "file": "c:\\Users\\donat\\www\\gri\\examen1\\public\\index.html"
         }
     ]
 }

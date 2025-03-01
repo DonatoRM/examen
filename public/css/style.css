@@ -7,12 +7,132 @@ Autor: Donato Ramos Martínez
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --color-viewport: #fafdf0;
+    --color-submit: #016906;
+    --color-footer: #18c0f3;
+    --color-button-accessibility: #f3c018;
+    --color-danger: #bb0000;
+}
+html {
+    background-color: var(--color-viewport);
+}
+body {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+main {
+    width: 100%;
+}
+main section:first-child {
+    width: 50%;
+    margin: 0 auto;
+}
+.form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+}
+#idLabelTask {
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    top: -0.25rem;
+    left: 0.5rem;
+}
+.task {
+    border: none;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.buttonSubmit,
+.buttonAccessibility {
+    background-color: var(--color-submit);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.buttonAccessibility {
+    background-color: var(--color-button-accessibility);
+}
+fieldset {
+    border: 0;
+}
+legend {
+    opacity: 0;
+}
 .error {
-    color: red;
+    color: var(--color-danger);
+}
+.toggleCompleted {
+    color: var(--color-danger);
 }
 .completed {
-    color: green;
+    text-decoration: line-through;
 }
-.accessibility {
-    font-size: 4.5rem;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-footer);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+.response {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto repeat(2, 150px);
+    gap: 0.5rem;
+    border-bottom: 1px dashed var(--color-footer);
+    padding: 0.5rem;
+}
+.response li {
+    display: contents;
+}
+.response li button:first-child {
+    grid-column: 2;
+}
+.response li button:last-child {
+    grid-column: 3;
+}
+@media screen and (max-width: 750px) {
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 span {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    h1 span {
+        width: 100%;
+    }
 }

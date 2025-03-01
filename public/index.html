@@ -6,37 +6,52 @@
         <meta name="description" content="Examen de GRI" />
         <meta name="keywords" content="Examen, GRI" />
         <meta name="author" content="Donato Ramos Martínez" />
+        <meta name="robots" content="index,follow" />
         <title>Examen</title>
         <link rel="stylesheet" href="css/style.css" media="all" />
     </head>
     <body>
         <header>
-            <h1>Examen de GRI</h1>
+            <h1>
+                <span>Examen de </span><span>Gabinete de Recolocación </span
+                ><span>Industrial GRI</span>
+            </h1>
         </header>
         <main>
-            <section id="inputSection">
+            <section>
                 <form action="#" method="get" id="form" class="form">
                     <fieldset>
                         <legend>Formulario de entrada</legend>
                         <div class="row">
-                            <label for="task" id="idLabelTask">Tarea: </label>
-                            <input
-                                type="text"
-                                name="task"
-                                id="task"
-                                class="task"
-                                placeholder="Tarea"
-                                aria-labelledby="idLabelTask"
-                                required
-                            />
-                            <button type="submit">Añadir</button>
-                            <div id="error" class="error"></div>
+                            <div class="data">
+                                <label for="task" id="idLabelTask"
+                                    >Tarea
+                                </label>
+                                <input
+                                    type="text"
+                                    name="task"
+                                    id="task"
+                                    class="task"
+                                    placeholder="Tarea"
+                                    aria-labelledby="idLabelTask"
+                                    aria-required="true"
+                                    required
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                aria-label="Añadir tarea"
+                                class="buttonSubmit"
+                            >
+                                Añadir
+                            </button>
+                            <div id="error" aria-live="assertive"></div>
                         </div>
                     </fieldset>
                 </form>
             </section>
             <section>
-                <ul id="response" class="response"></ul>
+                <ul id="response" class="response" role="list"></ul>
             </section>
         </main>
         <footer>
@@ -44,6 +59,8 @@
                 type="button"
                 id="accessibility"
                 aria-label="Botón de accesibilidad"
+                aria-pressed="false"
+                class="buttonAccessibility"
             >
                 Accesibilidad
             </button>
